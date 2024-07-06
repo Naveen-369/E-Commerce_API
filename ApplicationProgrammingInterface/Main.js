@@ -1,6 +1,7 @@
 const path = require('path');
 const dotenv = require('dotenv');
 const express = require('express');
+const ConnectToDataBase=require("./config/ConfigDatabase");
 
 // Load environment variables
 dotenv.config({ path: path.join(__dirname, 'config', 'config.env') });
@@ -11,6 +12,9 @@ const app = express();
 // Import routes
 const products = require('./Routes/Products');
 const orders = require("./Routes/Orders");
+
+// Database Connection
+ConnectToDataBase();
 
 // Use routes
 app.use('/api/v1/', products);
