@@ -1,2 +1,2 @@
 # E-Commerce_API
-Creation of an E - Commerce API using Node.js, Express.js and MongoDB.
+Creation of an E - Commerce API using MVC, Node.js, Express.js and MongoDB.
