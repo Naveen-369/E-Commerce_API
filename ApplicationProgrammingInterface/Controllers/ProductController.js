@@ -31,9 +31,10 @@ exports.getProductsID=async(request,response,next)=>{
     }catch(error){
 
             //Declaration of the response
-            response.json({
+            response.status(404).json({
                 SuccessCode:false,
-                message:"Product ID not found Please enter a valid product ID",
+                Error:error.message,
+                Suggestion:"Product ID not found Please enter a valid product ID"
             })
     }
     
