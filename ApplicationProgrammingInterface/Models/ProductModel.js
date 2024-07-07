@@ -10,7 +10,7 @@ const ProductSchema=new mongoose.Schema({
     images:[{image:String}],
     category:String,
     Seller:String,
-    Stock:String,
+    Stock:Number,
     Number_Of_Reviews:String,
     CeratedAt:Date
  })

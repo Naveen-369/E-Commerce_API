@@ -4,7 +4,7 @@ const ProductModel = require("../Models/ProductModel");
 exports.getProducts=async(request,response,next)=>{
     
     //The database methods may take some time to fetch all the documents. So, we make the function asynchronous.
-    const ProductList=await ProductModel.find({});
+    const ProductList=await ProductModel.find();
     
     // Declaration of the response
     response.json({
