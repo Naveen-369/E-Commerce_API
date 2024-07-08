@@ -9,8 +9,8 @@ const ProductSchema=new mongoose.Schema({
     ratings:String,
     images:[{image:String}],
     category:String,
-    Seller:String,
-    Stock:Number,
+    seller:String,
+    stock:Number,
     Number_Of_Reviews:String,
     CeratedAt:Date
  })
