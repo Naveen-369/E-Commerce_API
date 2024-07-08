@@ -82,7 +82,7 @@ The main entry point for routing in the application.
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone "https://github.com/Naveen-369/E-Commerce_API.git"
    cd E-COMMERCE_API
     ```
 
