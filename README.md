@@ -1,4 +1,4 @@
-# E-Commerce API Documentation
+# E-Commerce Application Programming Interface
 
 ## Overview
 
