@@ -26,10 +26,9 @@ exports.postOrders=async (request,response,next)=>{
 
     NewOrder.CartItem.forEach(async (item)=> {
         const product = await productModel.findById(item.product._id.$oid);
-        console.log(product.category,"\n\n\n");
-        // product.Stock = product.Stock - item.Qty;
-        // conosle.log(product.Stock);
-        // await product.save();
+        product.stock = product.stock - item.Qty;
+        console.log(product.stock);
+        await product.save();
     })
         
     response.json({
